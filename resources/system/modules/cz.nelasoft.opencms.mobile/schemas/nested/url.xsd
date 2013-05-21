@@ -1,0 +1,34 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	
+
+	<xsd:element name="MobAppTabUrls" type="OpenCmsMobAppTabUrls"/>
+	
+	<xsd:complexType name="OpenCmsMobAppTabUrls">
+		<xsd:sequence>
+			<xsd:element name="MobAppTabUrl" type="OpenCmsMobAppTabUrl" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsMobAppTabUrl">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />	
+			<xsd:element name="Url" type="OpenCmsString" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="cz.nelasoft.opencms.mobile.workplace"/>
+			<layouts/>
+			<validationrules>
+				<rule element="Title" regex="^.*[\S]+.*$" message="%(key.CL.textblock.setting.mandatory)" />
+				<rule element="Url" regex="^.*[\S]+.*$" message="%(key.CL.textblock.setting.mandatory)" />
+			</validationrules>
+		</xsd:appinfo>
+	</xsd:annotation>  
+	
+</xsd:schema>
+

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<creator>msach</creator>
+		<opencms_version>8.5.0</opencms_version>
+		<createdate>Fri, 10 May 2013 16:20:23 GMT</createdate>
+		<infoproject>Offline</infoproject>
+		<export_version>7</export_version>
+	</info>
+	<module>
+		<name>cz.nelasoft.opencms.mobile</name>
+		<nicename/>
+		<group>Nelasoft technologies, s.r.o.</group>
+		<class/>
+		<description/>
+		<version>0.12</version>
+		<authorname><![CDATA[Nelasoft technologies, s.r.o.]]></authorname>
+		<authoremail><![CDATA[info@nelasoft.cz]]></authoremail>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints>
+			<exportpoint uri="/system/modules/cz.nelasoft.opencms.mobile/classes/" destination="WEB-INF/classes/"/>
+			<exportpoint uri="/system/modules/cz.nelasoft.opencms.mobile/lib/" destination="WEB-INF/lib/"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/modules/cz.nelasoft.opencms.mobile/"/>
+			<resource uri="/system/workplace/resources/filetypes/mobapp.png"/>
+			<resource uri="/system/workplace/resources/filetypes/mobapp_big.png"/>
+		</resources>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="mobile_application" id="968">
+				<properties>
+					<property>
+						<name>template-elements</name>
+						<value type="shared"><![CDATA[/system/modules/cz.nelasoft.opencms.mobile/templates/main.jsp]]></value>
+					</property>
+					<property>
+						<name>export</name>
+						<value type="shared"><![CDATA[false]]></value>
+					</property>
+				</properties>
+				<param name="schema">/system/modules/cz.nelasoft.opencms.mobile/schemas/mobile.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="mobile_application" key="fileicon.mobapp" icon="mobapp.png" bigicon="mobapp_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=mobile_application" order="157" autosetnavigation="false" autosettitle="false" info="desc.mobapp"/>
+				<accesscontrol>
+					<accessentry principal="ROLE.WORKPLACE_USER" permissions="+r+v+w+c"/>
+				</accesscontrol>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<uuidstructure>bec9e549-5fe8-11e2-a8b7-b1a0242956dc</uuidstructure>
+			<datelastmodified>Wed, 16 Jan 2013 14:26:41 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 16 Jan 2013 14:26:41 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>1</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<uuidstructure>c3b58275-5fe8-11e2-a8b7-b1a0242956dc</uuidstructure>
+			<datelastmodified>Wed, 16 Jan 2013 14:26:49 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 16 Jan 2013 14:26:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile</destination>
+			<type>folder</type>
+			<uuidstructure>38237972-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes</destination>
+			<type>folder</type>
+			<uuidstructure>386ba608-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz</destination>
+			<type>folder</type>
+			<uuidstructure>387012da-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft</destination>
+			<type>folder</type>
+			<uuidstructure>3874589c-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>3878ec7e-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile</destination>
+			<type>folder</type>
+			<uuidstructure>388596b0-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile/workplace.properties</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile/workplace.properties</destination>
+			<type>plain</type>
+			<uuidstructure>c54d64ff-9090-11e2-88e1-b1a0242956dc</uuidstructure>
+			<uuidresource>b637651e-9090-11e2-88e1-b1a0242956dc</uuidresource>
+			<datelastmodified>Thu, 04 Apr 2013 20:08:20 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 19 Mar 2013 12:29:58 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile/workplace_cs.properties</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile/workplace_cs.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aa09df2b-9090-11e2-88e1-b1a0242956dc</uuidstructure>
+			<uuidresource>aa09df2c-9090-11e2-88e1-b1a0242956dc</uuidresource>
+			<datelastmodified>Thu, 04 Apr 2013 20:08:35 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 19 Mar 2013 12:29:37 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/classes/cz/nelasoft/opencms/mobile/workplace_en.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b637651d-9090-11e2-88e1-b1a0242956dc</uuidstructure>
+			<uuidresource>b637651e-9090-11e2-88e1-b1a0242956dc</uuidresource>
+			<datelastmodified>Thu, 04 Apr 2013 20:08:20 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 19 Mar 2013 12:29:58 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/elements</destination>
+			<type>folder</type>
+			<uuidstructure>385ed4c4-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/lib</destination>
+			<type>folder</type>
+			<uuidstructure>3067a7e9-9c37-11e2-bfd3-b1a0242956dc</uuidstructure>
+			<datelastmodified>Wed, 03 Apr 2013 08:19:22 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Wed, 03 Apr 2013 08:19:22 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/lib/cz.nelasoft.opencms.mobile.jar</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/lib/cz.nelasoft.opencms.mobile.jar</destination>
+			<type>binary</type>
+			<uuidstructure>b2d95d01-9c37-11e2-bfd3-b1a0242956dc</uuidstructure>
+			<uuidresource>b2d95d02-9c37-11e2-bfd3-b1a0242956dc</uuidresource>
+			<datelastmodified>Wed, 03 Apr 2013 08:23:01 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Wed, 03 Apr 2013 08:23:01 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[cz.nelasoft.opencms.mobile]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas</destination>
+			<type>folder</type>
+			<uuidstructure>3867ae66-6eae-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:35:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:35:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/mobile.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/mobile.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>b82e2ec2-6eb0-11e2-8533-1102845e0d1d</uuidstructure>
+			<uuidresource>b82e2ec3-6eb0-11e2-8533-1102845e0d1d</uuidresource>
+			<datelastmodified>Sun, 24 Mar 2013 21:18:07 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:53:25 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested</destination>
+			<type>folder</type>
+			<uuidstructure>5e23afd4-6eb1-11e2-8533-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 09:58:04 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 09:58:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/contacts.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/contacts.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a54e8b14-8124-11e2-b0f7-b1a0242956dc</uuidstructure>
+			<uuidresource>a54e8b15-8124-11e2-b0f7-b1a0242956dc</uuidresource>
+			<datelastmodified>Sun, 24 Mar 2013 21:18:22 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Wed, 27 Feb 2013 21:28:36 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>77d96b7d-8c17-11e2-aea5-b1a0242956dc</uuidstructure>
+			<uuidresource>77d96b7e-8c17-11e2-aea5-b1a0242956dc</uuidresource>
+			<datelastmodified>Wed, 03 Apr 2013 08:27:21 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Wed, 13 Mar 2013 19:51:59 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event_mapping.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event_mapping.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>1d79c06d-8c1b-11e2-aea5-b1a0242956dc</uuidstructure>
+			<uuidresource>1d79c06e-8c1b-11e2-aea5-b1a0242956dc</uuidresource>
+			<datelastmodified>Sun, 24 Mar 2013 21:18:46 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Wed, 13 Mar 2013 20:18:06 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7c130276-6eb6-11e2-8533-1102845e0d1d</uuidstructure>
+			<uuidresource>7c130277-6eb6-11e2-8533-1102845e0d1d</uuidresource>
+			<datelastmodified>Wed, 03 Apr 2013 08:27:03 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 10:34:41 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news_mapping.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news_mapping.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a323c44c-768e-11e2-a440-1102845e0d1d</uuidstructure>
+			<uuidresource>a323c44d-768e-11e2-a440-1102845e0d1d</uuidresource>
+			<datelastmodified>Wed, 03 Apr 2013 08:16:04 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Thu, 14 Feb 2013 10:09:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/tabs.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/tabs.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>6a46affd-805c-11e2-b0f7-b1a0242956dc</uuidstructure>
+			<uuidresource>6a46affe-805c-11e2-b0f7-b1a0242956dc</uuidresource>
+			<datelastmodified>Sun, 24 Mar 2013 21:19:24 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 26 Feb 2013 21:35:18 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/url.xsd</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/schemas/nested/url.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>fc15c06b-8057-11e2-b0f7-b1a0242956dc</uuidstructure>
+			<uuidresource>fc15c06c-8057-11e2-b0f7-b1a0242956dc</uuidresource>
+			<datelastmodified>Sun, 24 Mar 2013 21:19:36 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 26 Feb 2013 21:03:35 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/templates</destination>
+			<type>folder</type>
+			<uuidstructure>e82fb39b-6ecc-11e2-a440-1102845e0d1d</uuidstructure>
+			<datelastmodified>Mon, 04 Feb 2013 13:15:12 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 13:15:12 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/cz.nelasoft.opencms.mobile/templates/main.jsp</source>
+			<destination>system/modules/cz.nelasoft.opencms.mobile/templates/main.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>f003f18d-6ecc-11e2-a440-1102845e0d1d</uuidstructure>
+			<uuidresource>f003f18e-6ecc-11e2-a440-1102845e0d1d</uuidresource>
+			<datelastmodified>Mon, 06 May 2013 05:30:43 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Mon, 04 Feb 2013 13:15:25 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>825afce2-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>login-form</name>
+					<value><![CDATA[/system/login/index.html]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ALL_OTHERS</uuidprincipal>
+					<flags>134</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>518</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<uuidstructure>82c16052-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<uuidstructure>83ca1dcc-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/mobapp.png</source>
+			<destination>system/workplace/resources/filetypes/mobapp.png</destination>
+			<type>image</type>
+			<uuidstructure>ec30ebe3-9092-11e2-88e1-b1a0242956dc</uuidstructure>
+			<uuidresource>ec30ebe4-9092-11e2-88e1-b1a0242956dc</uuidresource>
+			<datelastmodified>Tue, 19 Mar 2013 12:45:47 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 19 Mar 2013 12:45:47 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[mobapp]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/mobapp_big.png</source>
+			<destination>system/workplace/resources/filetypes/mobapp_big.png</destination>
+			<type>image</type>
+			<uuidstructure>ec598287-9092-11e2-88e1-b1a0242956dc</uuidstructure>
+			<uuidresource>ec598288-9092-11e2-88e1-b1a0242956dc</uuidresource>
+			<datelastmodified>Tue, 19 Mar 2013 12:45:47 GMT</datelastmodified>
+			<userlastmodified>lvejmelek</userlastmodified>
+			<datecreated>Tue, 19 Mar 2013 12:45:47 GMT</datecreated>
+			<usercreated>lvejmelek</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[mobapp_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

@@ -1,0 +1,38 @@
+  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event_mapping.xsd"/>
+	
+
+	<xsd:element name="MobAppTabEvents" type="OpenCmsMobAppTabEvents"/>
+	
+	<xsd:complexType name="OpenCmsMobAppTabEvents">
+		<xsd:sequence>
+			<xsd:element name="MobAppTabEvent" type="OpenCmsMobAppTabEvent" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsMobAppTabEvent">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />	
+			<xsd:element name="Subtitle" type="OpenCmsString" />	
+			<xsd:element name="EventCollector" type="OpenCmsString" />
+			<xsd:element name="EventCollectorParam" type="OpenCmsString" />
+			<xsd:element name="Mapping" type="OpenCmsMobAppEventMapping"  minOccurs="0" maxOccurs="10"/>
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="cz.nelasoft.opencms.mobile.workplace"/>
+			<layouts>
+				<layout element="EventCollector" widget="cz.nelasoft.opencms.mobile.CollectorSelectWidget"/>
+			</layouts>
+			<validationrules>
+				<rule element="Title" regex="^.*[\S]+.*$" message="%(key.CL.textblock.setting.mandatory)" />
+			</validationrules>
+		</xsd:appinfo>
+	</xsd:annotation>  
+	
+</xsd:schema>

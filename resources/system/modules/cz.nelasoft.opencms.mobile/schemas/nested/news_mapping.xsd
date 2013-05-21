@@ -1,0 +1,36 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+
+	<xsd:element name="MobAppNewsMappings" type="OpenCmsMobAppNewsMappings"/>
+	
+	<xsd:complexType name="OpenCmsMobAppNewsMappings">
+		<xsd:sequence>
+			<xsd:element name="MobAppNewsMapping" type="OpenCmsMobAppNewsMapping" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsMobAppNewsMapping">
+		<xsd:sequence>
+			<xsd:element name="Field" type="OpenCmsString" />
+			<xsd:element name="XmlNode" type="OpenCmsString"  />
+			<xsd:element name="Default" type="OpenCmsString"  />
+			<xsd:element name="MaxLength" type="OpenCmsString" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="cz.nelasoft.opencms.mobile.workplace"/>
+			<layouts>
+				<layout element="Field" widget="SelectorWidget" configuration="Title|Content|Image|Date" />
+			</layouts>
+			<validationrules>
+				<!--<rule element="XmlNode" regex="^.*[\S]+.*$" message="%(key.CL.textblock.setting.mandatory)" />-->
+			</validationrules>
+		</xsd:appinfo>
+	</xsd:annotation>  
+	
+</xsd:schema>
+

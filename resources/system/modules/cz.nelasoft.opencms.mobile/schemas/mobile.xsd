@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/tabs.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/url.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/contacts.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news_mapping.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event_mapping.xsd"/>
+		
+	<xsd:element name="MobileApplications" type="OpenCmsMobileApplications"/>
+	
+	<xsd:complexType name="OpenCmsMobileApplications">
+		<xsd:sequence>
+			<xsd:element name="MobileApplication" type="OpenCmsMobileApplication" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsMobileApplication">
+		
+		<xsd:sequence>	
+			<xsd:element name="Tabs" type="OpenCmsMobAppTab" minOccurs="0"/>
+		</xsd:sequence>
+		
+		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="cz.nelasoft.opencms.mobile.workplace"/>
+		</xsd:appinfo>
+	</xsd:annotation>  
+</xsd:schema>

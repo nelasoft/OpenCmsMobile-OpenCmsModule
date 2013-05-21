@@ -1,0 +1,41 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/url.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/contacts.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/news_mapping.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/cz.nelasoft.opencms.mobile/schemas/nested/event_mapping.xsd"/>
+	
+
+	<xsd:element name="MobAppTabs" type="OpenCmsMobAppTabs"/>
+	
+	<xsd:complexType name="OpenCmsMobAppTabs">
+		<xsd:sequence>
+			<xsd:element name="MobAppTab" type="OpenCmsMobAppTab" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsMobAppTab">
+		<xsd:choice minOccurs="0" maxOccurs="5">
+			<xsd:element name="NewsTab" type="OpenCmsMobAppTabNew" minOccurs="0"/>
+			<xsd:element name="EventTab" type="OpenCmsMobAppTabEvent" minOccurs="0"/>
+			<xsd:element name="UrlTab" type="OpenCmsMobAppTabUrl" minOccurs="0"/>
+			<xsd:element name="ContactTab" type="OpenCmsMobAppTabContact" minOccurs="0"/>
+		</xsd:choice>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="cz.nelasoft.opencms.mobile.workplace"/>
+			<layouts/>
+			<validationrules>
+				
+			</validationrules>
+		</xsd:appinfo>
+	</xsd:annotation>  
+	
+</xsd:schema>
+
